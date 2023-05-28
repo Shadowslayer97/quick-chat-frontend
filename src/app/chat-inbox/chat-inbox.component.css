@@ -109,4 +109,8 @@ header {
     font-weight: normal;
     color: #ffffff;
   }
+
+  .chat-list {
+    list-style-type: none;
+  }
   

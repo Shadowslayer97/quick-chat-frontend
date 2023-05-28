@@ -5,18 +5,27 @@
   </div>
   
   <div class="chat-container">
+    
     <div class="chat-messages">
       <div class="chat-messages-show-container">
-        <ul id="message-list" class="chat-messages-show-list">
-          <!-- Message list content -->
-        </ul>
+        
+        <div class = "chat-list-container">
+            <ul class = "chat-list">
+                <li *ngFor="let message of messages" >
+                    <app-chat-inbox-message [message]="message"></app-chat-inbox-message>
+    
+                </li>
+            </ul>
+        </div>
       </div>
       <div class="chat-messages-create-container"> 
-        <input class="chat-messages-create-input" type="text" [(ngModel)]="message" placeholder="Type your message...">
+        <input class="chat-messages-create-input" type="text" [(ngModel)]="messageText" placeholder="Type your message...">
         <button class="chat-messages-create-button" (click)="sendMessage()">Send</button>
       </div>
     </div>
   </div>
+
+  
   
   <footer>
     <p>Assignment: Real-Time Chat App</p>

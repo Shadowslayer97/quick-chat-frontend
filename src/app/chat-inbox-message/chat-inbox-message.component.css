@@ -1,7 +1,29 @@
-<div class="message-box">
-  <img class="user-icon" src="anonymous_user_image.jpg" alt="User Icon">
-  <div class="message-content">
-    <h3 class="user-title">John Doe</h3>
-    <p class="message-text">Hello, how are you?</p>
-  </div>
-</div>
+.message-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .message-content {
+    margin-left: 10px;
+  }
+  
+  .user-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .message-text {
+    font-size: 14px;
+  }
+  

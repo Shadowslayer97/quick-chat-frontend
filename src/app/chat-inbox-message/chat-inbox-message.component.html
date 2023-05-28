@@ -1,7 +1,7 @@
-<div class="message-box">
-    <img class="user-icon" src="anonymous_user_image.jpg" alt="User Icon">
+<div class="message-box" [style.float]="message.alignment">
+    <img class="user-icon" src="https://cdn-icons-png.flaticon.com/128/64/64572.png" alt="User Icon">
     <div class="message-content">
-      <h3 class="user-title">John Doe</h3>
-      <p class="message-text">Hello, how are you?</p>
+      <h3 class="user-title"> {{message.user}} </h3>
+      <p class="message-text"> {{message.messageText}} </p>
     </div>
   </div>
