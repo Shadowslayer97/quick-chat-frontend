@@ -1,5 +1,6 @@
 {
   "name": "quick-chat-frontend",
+  "description": "A chat frontend interface",
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
