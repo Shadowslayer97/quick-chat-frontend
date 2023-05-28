@@ -60,12 +60,24 @@
     background-color: #0056b3;
   }
 
-  /* Header */
-header {
+  .header {
     background-color: #007bff;
     color: #ffffff;
     padding: 20px;
     text-align: center;
+  }
+  
+  .header h1 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .header p {
+    font-size: 16px;
+    margin: 10px 0 0;
   }
   
   /* Footer */
