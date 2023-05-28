@@ -1,31 +1,21 @@
-
- <div class="header">
+<div class="header">
     <h1>Quick Chat</h1>
     <p>Welcome to the Quick Chat application. Start chatting now!</p>
   </div>
   
-  <div class="chat-container">
-    
-    <div class="chat-messages">
-      <div class="chat-messages-show-container">
-        
-        <div class = "chat-list-container">
-            <ul class = "chat-list">
-                <li *ngFor="let message of messages" >
-                    <app-chat-inbox-message [message]="message"></app-chat-inbox-message>
-    
-                </li>
-            </ul>
-        </div>
-      </div>
-      <div class="chat-messages-create-container"> 
-        <input class="chat-messages-create-input" type="text" [(ngModel)]="messageText" placeholder="Type your message...">
-        <button class="chat-messages-create-button" (click)="sendMessage()">Send</button>
-      </div>
+  <div class="chat-messages">
+    <div class="chat-messages-show-container">
+      <ul class="chat-messages-show-list">
+        <li *ngFor="let message of messages">
+          <app-chat-inbox-message [message]="message"></app-chat-inbox-message>
+        </li>
+      </ul>
+    </div>
+    <div class="chat-messages-create-container"> 
+      <input class="chat-messages-create-input" type="text" [(ngModel)]="messageText" placeholder="Type your message...">
+      <button class="chat-messages-create-button" (click)="sendMessage()">Send</button>
     </div>
   </div>
-
-  
   
   <footer>
     <p>Assignment: Real-Time Chat App</p>

@@ -15,11 +15,17 @@
     padding: 20px;
   }
   
-  /* Chat message list */
   .chat-messages-show-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column; /* Ensure the elements are stacked vertically */
+  }
+  
+  /* Remove dot from list items */
+  .chat-messages-show-list li {
+    list-style-type: none;
   }
   
   /* Chat message input container */
@@ -111,6 +117,8 @@ header {
   }
 
   .chat-list {
-    list-style-type: none;
+    /* list-style-type: none; */
+    margin: 0;
+    padding: 0;   
   }
   
